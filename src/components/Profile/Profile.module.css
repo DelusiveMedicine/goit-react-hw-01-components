@@ -1,0 +1,44 @@
+.container {
+  margin: 0 auto;
+  background-color: #e7ecf2;
+  padding: 100px;
+  width: 400px;
+}
+
+.userCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 50px 0 50px;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+}
+
+.image {
+  border-radius: 50%;
+}
+
+.userStats {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.userStatsItem {
+  padding: 30px;
+  width: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f3f6f9;
+}
+
+.leftBorderBottom {
+  border-bottom-left-radius: 2%;
+}

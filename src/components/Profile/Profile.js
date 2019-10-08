@@ -1,27 +1,32 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Profile.module.css';
 
 const Profile = ({ user }) => {
   const { avatar, name, tag, location, stats } = user;
   const { followers, views, likes } = stats;
+  const { container, userCard, image, userStats, userStatsItem } = styles;
+
+  const firstUserStatsItem = [userStatsItem].push(styles.leftBorderBottom);
+
   return (
-    <div>
-      <div>
-        <img src={avatar} alt={`${name} avatar`} />
+    <div className={container}>
+      <div className={userCard}>
+        <img src={avatar} alt={`${name} avatar`} className={image} />
         <p>{name}</p>
         <p>{`@${tag}`}</p>
         <p>{location}</p>
       </div>
-      <ul>
-        <li>
+      <ul className={userStats}>
+        <li classNames={firstUserStatsItem.join(' ')}>
           <span>Followers</span>
           <span>{followers}</span>
         </li>
-        <li>
+        <li className={userStatsItem}>
           <span>Views</span>
           <span>{views}</span>
         </li>
-        <li>
+        <li className={userStatsItem}>
           <span>Likes</span>
           <span>{likes}</span>
         </li>
