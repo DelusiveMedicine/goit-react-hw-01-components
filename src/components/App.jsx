@@ -5,6 +5,8 @@ import Stats from './Stats';
 import stats from './Stats/stats';
 import FriendList from './FriendList';
 import friends from './FriendList/friends';
+import TransactionHistory from './TransactionHistory';
+import transactions from './TransactionHistory/transactions';
 
 const App = () => {
   return (
@@ -12,6 +14,7 @@ const App = () => {
       <Profile user={user} />
       <Stats title="Upload stats" stats={stats} />
       <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </React.Fragment>
   );
 };
