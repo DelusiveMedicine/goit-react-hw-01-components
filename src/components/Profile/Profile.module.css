@@ -1,37 +1,35 @@
 .container {
-  margin: 0 auto;
   background-color: #e7ecf2;
   padding: 100px;
-  width: 400px;
 }
 
 .userCard {
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #fff;
+  width: 300px;
   padding: 50px 0 50px;
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
 }
 
-.image {
+.userPhoto {
   border-radius: 50%;
 }
 
 .userStats {
-  margin: 0;
+  width: 300px;
+  margin: 0 auto;
   padding: 0;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  list-style: none;
 }
 
 .userStatsItem {
-  padding: 30px;
-  width: 130px;
+  padding: 30px 0 30px;
+  width: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -40,5 +38,9 @@
 }
 
 .leftBorderBottom {
-  border-bottom-left-radius: 2%;
+  border-bottom-left-radius: 8%;
+}
+
+.rightBorderBottom {
+  border-bottom-right-radius: 8%;
 }
