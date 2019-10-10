@@ -13,18 +13,21 @@ const Profile = ({ user }) => {
     userStatsItem,
     leftBorderBottom,
     rightBorderBottom,
+    userDescr,
+    userName,
   } = styles;
 
   const firstUserStatsItem = [userStatsItem, leftBorderBottom];
   const lastUserStatsItem = [userStatsItem, rightBorderBottom];
+  const userNameStyle = [userDescr, userName];
 
   return (
     <div className={container}>
       <div className={userCard}>
         <img src={avatar} alt={`${name} avatar`} className={userPhoto} />
-        <p>{name}</p>
-        <p>{`@${tag}`}</p>
-        <p>{location}</p>
+        <p className={userNameStyle.join(' ')}>{name}</p>
+        <p className={userDescr}>{`@${tag}`}</p>
+        <p className={userDescr}>{location}</p>
       </div>
       <ul className={userStats}>
         <li className={firstUserStatsItem.join(' ')}>

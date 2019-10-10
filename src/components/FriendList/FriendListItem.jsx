@@ -1,25 +1,34 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './FriendListItem.module.css';
 
-const FriendlistItem = ({ avatar, name, isOnline }) => {
+const FriendListItem = ({ avatar, name, isOnline }) => {
+  const { container, friendStatus, friendAvatar, online, offline } = styles;
+  const friendStatusStyle = [friendStatus];
+  if (isOnline) {
+    friendStatusStyle.push(online);
+  } else {
+    friendStatusStyle.push(offline);
+  }
+
   return (
-    <li>
-      <span>.</span>
-      <img src={avatar} alt={name} width="48" />
+    <li className={container}>
+      <span className={friendStatusStyle.join(' ')} />
+      <img src={avatar} alt={name} className={friendAvatar} />
       <p>{name}</p>
     </li>
   );
 };
 
-FriendlistItem.defaultProps = {
+FriendListItem.defaultProps = {
   avatar: 'https://www.imanami.com/wp-content/uploads/2016/03/unknown-user.jpg',
   name: 'Anonym',
 };
 
-FriendlistItem.propTypes = {
+FriendListItem.propTypes = {
   avatar: PropTypes.string,
   name: PropTypes.string,
   isOnline: PropTypes.bool.isRequired,
 };
 
-export default FriendlistItem;
+export default FriendListItem;
