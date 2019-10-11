@@ -1,0 +1,18 @@
+.tableCell {
+  padding: 16px 0;
+  font-family: sans-serif;
+  color: #868789;
+  border-right: 1px solid #e3e3e3;
+}
+
+.tableCell::first-letter {
+  text-transform: uppercase;
+}
+
+.tableBody:nth-of-type(2n) {
+  background-color: #ecf1f4;
+}
+
+.tableCell:last-of-type {
+  border: none;
+}

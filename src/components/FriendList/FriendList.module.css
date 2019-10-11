@@ -1,8 +1,7 @@
 .container {
   margin: 0 auto;
-  padding: 20px 0 0;
+  padding: 20px 0 50px;
   width: 400px;
-  list-style: none;
   font-size: 30px;
   font-family: sans-serif;
 }

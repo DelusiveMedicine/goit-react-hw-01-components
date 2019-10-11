@@ -1,0 +1,24 @@
+.table {
+  margin: 0 auto;
+  width: 872px;
+  text-align: center;
+  box-shadow: 0 4px 4px 0 rgb(216, 224, 234, 1);
+  border-collapse: collapse;
+}
+
+.tableHead {
+  background-color: #00bcd5;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.tableCell {
+  padding: 16px 0;
+  font-family: sans-serif;
+  border-right: 1px solid;
+}
+
+.tableCell:last-of-type {
+  border: none;
+}

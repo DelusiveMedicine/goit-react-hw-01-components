@@ -7,7 +7,6 @@
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: #fff;
   width: 340px;
@@ -26,7 +25,6 @@
 .regularText {
   margin: 0 0 10px;
   color: #768696;
-  font-size: 16px;
 }
 
 .boldText {
@@ -51,7 +49,6 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   background-color: #f3f6f9;
   border: 1px solid rgb(216, 224, 234, 0.6);
