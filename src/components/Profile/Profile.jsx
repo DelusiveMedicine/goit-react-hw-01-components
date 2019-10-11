@@ -13,34 +13,34 @@ const Profile = ({ user }) => {
     userStatsItem,
     leftBorderBottom,
     rightBorderBottom,
-    userDescr,
-    userName,
+    regularText,
+    boldText,
   } = styles;
 
   const firstUserStatsItem = [userStatsItem, leftBorderBottom];
   const lastUserStatsItem = [userStatsItem, rightBorderBottom];
-  const userNameStyle = [userDescr, userName];
+  const userNameStyle = [regularText, boldText];
 
   return (
     <div className={container}>
       <div className={userCard}>
         <img src={avatar} alt={`${name} avatar`} className={userPhoto} />
         <p className={userNameStyle.join(' ')}>{name}</p>
-        <p className={userDescr}>{`@${tag}`}</p>
-        <p className={userDescr}>{location}</p>
+        <p className={regularText}>{`@${tag}`}</p>
+        <p className={regularText}>{location}</p>
       </div>
       <ul className={userStats}>
         <li className={firstUserStatsItem.join(' ')}>
-          <span>Followers</span>
-          <span>{followers}</span>
+          <span className={regularText}>Followers</span>
+          <span className={boldText}>{followers}</span>
         </li>
         <li className={userStatsItem}>
-          <span>Views</span>
-          <span>{views}</span>
+          <span className={regularText}>Views</span>
+          <span className={boldText}>{views}</span>
         </li>
         <li className={lastUserStatsItem.join(' ')}>
-          <span>Likes</span>
-          <span>{likes}</span>
+          <span className={regularText}>Likes</span>
+          <span className={boldText}>{likes}</span>
         </li>
       </ul>
     </div>

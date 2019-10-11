@@ -10,11 +10,12 @@
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  width: 300px;
+  width: 340px;
   padding: 40px 0 40px;
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
   font-family: sans-serif;
+  box-shadow: 0 0 1px 1px rgb(216, 224, 234, 0.6);
 }
 
 .userPhoto {
@@ -22,30 +23,38 @@
   margin-bottom: 30px;
 }
 
-.userDescr {
+.regularText {
   margin: 0 0 10px;
+  color: #768696;
+  font-size: 16px;
 }
 
-.userName {
+.boldText {
   font-weight: bold;
+  color: #122236;
+  font-size: 18px;
 }
 
 .userStats {
-  width: 300px;
+  width: 340px;
   margin: 0 auto;
   padding: 0;
   display: flex;
   font-family: sans-serif;
+  box-shadow: 0 0 1px 1px rgb(216, 224, 234, 0.6);
+  border-bottom-left-radius: 8%;
+  border-bottom-right-radius: 8%;
 }
 
 .userStatsItem {
   padding: 30px 0 30px;
-  width: 100px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #f3f6f9;
+  border: 1px solid rgb(216, 224, 234, 0.6);
 }
 
 .leftBorderBottom {
