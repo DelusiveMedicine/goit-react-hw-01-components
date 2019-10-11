@@ -11,7 +11,13 @@ const randomColor = () => {
 };
 
 const Stats = ({ stats, title }) => {
-  const { container, statsList, statsTitle, statsListItem } = styles;
+  const {
+    container,
+    statsList,
+    statsTitle,
+    statsListItem,
+    statsLabel,
+  } = styles;
 
   return (
     <section className={container}>
@@ -23,7 +29,7 @@ const Stats = ({ stats, title }) => {
             className={statsListItem}
             style={{ backgroundColor: randomColor() }}
           >
-            <span>{stat.label}</span>
+            <span className={statsLabel}>{stat.label}</span>
             <span>{`${stat.percentage}%`}</span>
           </li>
         ))}
