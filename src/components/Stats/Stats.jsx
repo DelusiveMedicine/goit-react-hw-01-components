@@ -1,14 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Stats.module.css';
-
-const randomColor = () => {
-  const first = Math.floor(Math.random() * 256);
-  const second = Math.floor(Math.random() * 256);
-  const third = Math.floor(Math.random() * 256);
-  const color = `rgb(${first},${second},${third})`;
-  return color;
-};
+import randomColor from '../colorRandomizer';
 
 const Stats = ({ stats, title }) => {
   const {
